@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
+
 <body>
   <div class="container">
-    <img src="images/bg-pattern-desktop.svg">
-    <img src="images/logo.svg" alt="logo">
-    <p class="title">We're </p> 
-    <p class="sub-title">coming soon</p> 
-    <p>Hello fellow shoppers! We're currently building our new fashion store.
-      Add your email below to stay up-to-date with announcements and our launch deals.
-    </p> 
-    <form action="">
-      <input type="email" name="email" id="" placeholder="Email Address" required>
-      <img src="images/icon-error.svg">
-      <button><img src="images/icon-arrow.svg"></button>
-    </form>    
+    <img class="bg-pattern" src="images/bg-pattern-desktop.svg">
+    <img class="hero-desktop" src="images/hero-desktop.jpg">
+    <img class="hero-mobile" src="images/hero-mobile.jpg">
+    <div class="cont-info">
+      <img class="logo" src="images/logo.svg" alt="logo">
+      <div class="info">
+        <p class="title">We're </p>
+        <p class="sub-title">coming soon</p>
+        <p class="text">Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <form action="">
+          <input type="email" name="email" id="" placeholder="Email Address" required>
+          <img src="images/icon-error.svg">
+          <button><img src="images/icon-arrow.svg"></button>
+        </form>
+      </div>
+    </div>
   </div>
   <footer>
     <p class="attribution">
@@ -40,4 +39,5 @@
     </p>
   </footer>
 </body>
+
 </html>
