@@ -1,8 +1,4 @@
-$desaturated-red: hsl(0, 36%, 70%)
-$soft-red: hsl(0, 93%, 68%)
-$dark-grayish-red: hsl(0, 6%, 24%)
-$grad-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))
-$grad-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%))
+@import '_variables'
 
 .container
     display: grid
@@ -22,14 +18,18 @@ $grad-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%))
         grid-column: 1 / 2
         grid-row: 1 / 2
 
+        .logo
+            margin-left: 20%
+            margin-top: 4em
+
         .info
             display: flex
             flex-direction: column
-            width: 52%
-            padding-left: 20%
+            width: 53%
+            margin: 15% 0 10% 20%
 
             .title
-                font-size: 5em
+                font-size: 4.2em
                 font-weight: 300
                 letter-spacing: 0.2em
                 text-transform: uppercase
@@ -37,7 +37,7 @@ $grad-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%))
                 color: $desaturated-red
 
             .sub-title
-                font-size: 5em
+                font-size: 4.2em
                 font-weight: 600
                 letter-spacing: 0.2em
                 text-transform: uppercase
@@ -47,6 +47,8 @@ $grad-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%))
             .text
                 font-weight: 400
                 margin: 0
+                padding: 0.8em 0
+                line-height: 1.5em
                 color: $desaturated-red
     
     .hero-mobile

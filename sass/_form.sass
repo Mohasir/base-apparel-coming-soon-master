@@ -1,14 +1,37 @@
+@import '_variables'
+
 form
-    display: inline-block
-    position: relative
-    
-    input
-        width: 80%
-        height: 80%
+    display: grid
+    grid-template-columns: auto 5% 15% 2%
+    grid-template-rows: 50px
+    grid-column-gap: 15px
+    margin: 5% 0
+
+    .input-email
+        grid-column: 1/4
+        grid-row: 1/2        
         padding: 0 2em
-        border-radius: 80px
+        border: 1px solid  hsl(0, 10%, 70%)
+        border-radius: 50px
+        color: $desaturated-red
+        font-weight: 600
     
-    button
-        width: 20%
-        position: absolute
-        top: 0
+    .icon-error
+        grid-column: 2/3
+        grid-row: 1/2
+        place-self: center
+        display: none
+    
+    .btn
+        grid-column: 3/5
+        grid-row: 1/2
+        background-image: $grad-2
+        border: none
+        border-radius: 50px
+        box-shadow: 0 5px 20px $desaturated-red
+
+        &:hover
+            cursor: pointer
+            background-image: red
+        
+        
