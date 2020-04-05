@@ -1,0 +1,57 @@
+@import '_variables'
+
+@media screen and (max-width: 1300px)
+    
+    .container
+        grid-template-columns: 1fr
+        grid-template-rows: 100px auto auto
+        background-image: $grad-1
+
+        .logo
+            grid-column: 1 / 2
+            grid-row: 1 / 2
+            width: 30%
+            margin-left: 10%
+            margin-top: 10%    
+        
+        .hero-mobile
+            grid-column: 1 / 2
+            grid-row: 2 / 3
+            width: 100%
+            display: block
+
+        .cont-info
+            grid-column: 1 / 2
+            grid-row: 3 / 4
+            text-align: center
+            margin-top: 20%
+
+            .info
+                width: 100% 
+                margin-left: 0              
+
+                .title
+                    font-size: 3em
+
+
+                .sub-title
+                    font-size: 3em
+
+                .text
+                    font-weight: 400
+                    padding: 2em 1.2em                     
+
+    form
+        grid-template-rows: 60px
+        margin: 5% 0 30% 0
+        padding: 0 2em
+    
+    .attribution 
+        text-align: center
+
+    .hero-desktop
+        display: none
+    
+    .bg-pattern
+        display: none
+            
