@@ -25,9 +25,10 @@
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
         <form action="">
-          <input class="input-email" type="email" name="email" id="" placeholder="Email Address" required>
+          <input class="input-email"  type="email" name="email" id="" placeholder="Email Address">
           <img class="icon-error" src="images/icon-error.svg">
-          <button class="btn"><img class="icon-arrow" src="images/icon-arrow.svg"></button>
+          <button class="btn" onclick="showMsg(this)" type="button"><img class="icon-arrow" src="images/icon-arrow.svg"></button>
+          <p class="msg-error">Please provide a valid email</p>
         </form>
       </div>
     </div>
@@ -38,6 +39,9 @@
       Coded by <a href="#">Samuel Barberena</a>.
     </p>
   </footer>
+
+  <script src="js/index.js"></script>
+
 </body>
 
 </html>
